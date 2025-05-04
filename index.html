@@ -628,6 +628,63 @@
             font-size: 0.9rem;
             color: var(--secondary);
         }
+        #contact {
+    padding: 60px 20px;
+    /* background: linear-gradient(135deg, #e0eafc, #cfdef3); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #007BFF;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
 
         footer {
             background: var(--dark);
@@ -1035,6 +1092,20 @@
             </div>
         </div>
     </section>
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form action="mailto:sagarre5661@gmail.com" method="post" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+
 
     <footer id="contact">
         <div class="container">
